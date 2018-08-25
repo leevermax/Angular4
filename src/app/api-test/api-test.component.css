@@ -1,0 +1,17 @@
+#btn-them{
+    float: right;
+}
+.label{
+    padding: 3px 10px;
+    margin: 5px 2px;
+    line-height: 13px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 85%;
+}
+.label-success {
+    background-color: #5ac146;
+}
+.label-rounded{
+    border-radius: 60px;
+}
