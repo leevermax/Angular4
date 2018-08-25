@@ -20,7 +20,7 @@
                               <th class="border-top-0">ACTION</th>
                           </tr>
                       </thead>
-                      <tbody *ngFor="let e of emp, let id = index">
+                      <tbody *ngFor="let e of emp;  let i = index">
                           <tr>
                               <td class="txt-oflo">{{e.id}}</td>
                               <td class="txt-oflo">{{e.maEmp}}</td>
@@ -40,7 +40,9 @@
                                 </select> -->
                             </td>
                               <td><span class="font-medium">{{e.positon}}</span></td>
-                              <td><span class="label label-success label-rounded">Detail</span> <span class="label label-success label-rounded">Edit info</span><span class="label label-success label-rounded">Delete</span></td>
+                              <td><button class="label label-success label-rounded">Detail</button> 
+                                <button class="label label-success label-rounded">Edit info</button>
+                                <button class="label label-success label-rounded" (click)="delEpm(e.id)">Delete</button></td>
                               
                           </tr>
                           

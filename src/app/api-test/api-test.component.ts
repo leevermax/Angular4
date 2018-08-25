@@ -28,7 +28,12 @@ export class ApiTestComponent implements OnInit {
     })
    }
 
-
+  delEpm(id:number){
+    this.http.delete('http://5b812d2297d8e500144f2de0.mockapi.io/employee/' + id).subscribe((data:any) =>{
+      alert(data.message);
+      this.getEmp();
+    });
+  }
 
   
   ngOnInit() {
